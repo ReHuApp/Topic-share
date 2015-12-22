@@ -1,0 +1,23 @@
+// Color
+$c-white: #fff;
+$c-text: #333;
+$c-active: #f00;
+
+// Font size
+$fs-tiny: 12px;
+$fs-small: 14px;
+$fs-normal: 16px;
+$fs-big: 18px;
+
+// Mixins
+@mixin psuedo-element() {
+  content: '';
+  display: block;
+  position: absolute;
+}
+
+@mixin breakpoint($class) {
+  @if $class == desktop {
+    @media (min-width: 1024px) { @content; }
+  }
+}
