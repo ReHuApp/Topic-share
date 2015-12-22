@@ -7,12 +7,13 @@
   color: $c-text;
   display: inline-block;
   padding: 0 1rem;
-  height: 2em;
-  line-height: 2em;
+  height: 2rem;
+  line-height: 2rem;
   font-size: $fs-small;
   text-align: center;
   background: $c-yellow;
   border-radius: 4px;
+  box-sizing: border-box;
 
   &__banner {
     @extend .button;
@@ -26,6 +27,8 @@
     @extend .button;
     color: $c-white;
     background: none;
+    height: 1.75rem;
+    line-height: 1.75rem;
     border: 1px solid $c-white;
   }
 
