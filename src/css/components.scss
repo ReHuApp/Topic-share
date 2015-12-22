@@ -36,7 +36,7 @@
     color: $c-light-gray;
     display: inline-block;
     font-size: $fs-tiny;
-    padding: 0 .625rem;
+    padding: 0 .8rem;
     height: 2.25rem;
     line-height: 2.25rem;
     border: 1px solid $c-pale-gray;
@@ -45,6 +45,39 @@
     b {
       font-weight: normal;
       color: $c-orange;
+      margin-right: 3px;
+    }
+
+    &__share {
+      @extend .button__badge;
+
+      &:before {
+        @include psuedo-element();
+        width: 1.375rem;
+        height: 1.375rem;
+        position: static;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 3px;
+      }
+
+      &__wechat {
+        @extend .button__badge__share;
+
+        &:before {
+          background: url(../img/icon-wechat.png) no-repeat center center;
+          background-size: contain;
+        }
+      }
+
+      &__moments {
+        @extend .button__badge__share;
+
+        &:before {
+          background: url(../img/icon-moments.png) no-repeat center center;
+          background-size: contain;
+        }
+      }
     }
   }
 }
@@ -65,19 +98,73 @@
 .post {
   padding: 1em 0;
 
-  &--namecard {}
+  &--namecard {
+    overflow: hidden;
+    margin-bottom: 1em;
+
+    img {
+      width: 2.25rem;
+      height: 2.25rem;
+      float: left;
+    }
+
+    div {
+      margin-left: 2.875rem;
+      font-size: $fs-tiny;
+      color: $c-gray;
+
+      strong {
+        display: block;
+        color: $c-text;
+        font-size: $fs-small;
+        font-weight: normal;
+      }
+    }
+  }
 
   &--content {
+    padding-bottom: 1rem;
+
     img,
     video {
+      display: block;
       width: 100%;
+    }
+
+    p {
+      margin: 1rem 0 0;
     }
   }
 
   &--meta {
     overflow: hidden;
 
+    address {
+      float: left;
+      position: relative;
+      height: 1.375rem;
+      line-height: 1.375rem;
+      color: $c-gray;
+      font-size: $fs-tiny;
+      font-style: normal;
+      background: $c-bg;
+      margin-bottom: .625rem;
+
+      &:before {
+        @include psuedo-element();
+        position: static;
+        display: inline-block;
+        vertical-align: middle;
+        width: 1.375rem;
+        height: 1.375rem;
+        margin-right: 3px;
+        background: url(../img/icon-map.png) no-repeat center center;
+        background-size: cover;
+      }
+    }
+
     .left {
+      clear: left;
       float: left;
     }
 
