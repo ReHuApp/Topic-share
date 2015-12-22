@@ -131,8 +131,6 @@
   }
 
   &--content {
-    padding-bottom: 1rem;
-
     img,
     video {
       display: block;
@@ -146,6 +144,7 @@
 
   &--meta {
     overflow: hidden;
+    margin-top: 1rem;
 
     address {
       float: left;
@@ -178,6 +177,43 @@
 
     .right {
       float: right;
+    }
+  }
+
+  &__related {
+    @extend .post;
+    overflow: hidden;
+    display: block;
+    color: $c-text;
+
+    img {
+      display: block;
+      width: 4.375rem;
+      height: 4.375rem;
+      float: left;
+    }
+
+    div {
+      margin-left: 5.625rem;
+      position: relative;
+      min-height: 4.375rem;
+
+      strong {
+        display: block;
+        font-weight: normal;
+        font-size: $fs-small;
+        height: 2.5rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: pre;
+      }
+
+      span {
+        color: $c-gray;
+        font-size: $fs-tiny;
+        position: absolute;
+        bottom: 0;
+      }
     }
   }
 }
