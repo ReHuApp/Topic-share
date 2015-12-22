@@ -1,0 +1,85 @@
+@import 'variables';
+
+/* Simple
+ * ===================================== */
+
+.button {
+  color: $c-text;
+  display: inline-block;
+  padding: 0 1rem;
+  height: 2em;
+  line-height: 2em;
+  font-size: $fs-small;
+  text-align: center;
+  background: $c-yellow;
+  border-radius: 4px;
+
+  &__banner {
+    @extend .button;
+    display: block;
+    margin: 1rem 10px;
+    height: 2.375rem;
+    line-height: 2.375rem;
+  }
+
+  &__transparent {
+    @extend .button;
+    color: $c-white;
+    background: none;
+    border: 1px solid $c-white;
+  }
+
+  &__badge {
+    color: $c-light-gray;
+    display: inline-block;
+    font-size: $fs-tiny;
+    padding: 0 .625rem;
+    height: 2.25rem;
+    line-height: 2.25rem;
+    border: 1px solid $c-pale-gray;
+    border-radius: 1.125rem;
+
+    b {
+      font-weight: normal;
+      color: $c-orange;
+    }
+  }
+}
+
+.icon {
+  display: inline-block;
+  font-size: $fs-tiny;
+
+  img {
+    vertical-align: center;
+  }
+}
+
+
+/* Block
+ * ===================================== */
+
+.post {
+  padding: 1em 0;
+
+  &--namecard {}
+
+  &--content {
+    img,
+    video {
+      width: 100%;
+    }
+  }
+
+  &--meta {
+    overflow: hidden;
+
+    .left {
+      float: left;
+    }
+
+    .right {
+      float: right;
+    }
+  }
+}

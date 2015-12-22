@@ -1,23 +1,24 @@
 // Color
 $c-white: #fff;
+$c-black: #000;
 $c-text: #333;
-$c-active: #f00;
+
+$c-bg: #f5f5f5;
+$c-yellow: #ffce1b;
+$c-pale-gray: #e7e7e7;
+$c-light-gray: #aaa;
+$c-gray: #999;
+$c-orange: #ff8a00;
 
 // Font size
-$fs-tiny: 12px;
-$fs-small: 14px;
+$fs-tiny: .75em;
+$fs-small: .875em;
 $fs-normal: 16px;
-$fs-big: 18px;
+$fs-big: 1.125em;
 
 // Mixins
 @mixin psuedo-element() {
   content: '';
   display: block;
   position: absolute;
-}
-
-@mixin breakpoint($class) {
-  @if $class == desktop {
-    @media (min-width: 1024px) { @content; }
-  }
 }

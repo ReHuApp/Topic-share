@@ -3,7 +3,10 @@
 // Global Rewrite
 body {
   color: $c-text;
-  background: $c-white;
+  background: $c-bg;
+  font-family: "Lantinghei SC", "Open Sans", Arial, "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", "STHeiti", "WenQuanYi Micro Hei", SimSun, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.4;
 }
 
 ul, ol {
@@ -13,6 +16,5 @@ ul, ol {
 }
 
 a {
-  color: $c-active;
   text-decoration: none;
 }

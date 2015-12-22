@@ -7,6 +7,106 @@ html
     link(rel='stylesheet', href='css/main.css')
   body
     header#header
+      .inner
+        .left
+          img(src='img/logo.png')
+          strong duang!
+          | 传播神器
+        .right
+          a.button(href='#') 立即打开
     main#main
+      section#topic
+        .inner
+          .post
+            .post--namecard
+              img(src='img/avatar.png')
+              div
+                strong 小鹿
+                time 1分钟前
+            .post--content
+              img(src='img/content.png')
+              p 谁家走丢了这么可爱的小猫咪！！！
+            .post--meta
+              address 厦门市思明区（传播地图）
+              .left
+                span.button__badge
+                  b 258
+                  | 评论
+              .right
+                a.button__badge(href='#') 微信
+                a.button__badge(href='#') 朋友圈
+
+      section#comments
+        .inner
+          h2 全部跟帖
+          ul
+            li
+              .post
+                .post--namecard
+                  img(src='img/avatar.png')
+                  div
+                    strong 小鹿
+                    time 1分钟前
+                .post--content
+                  video(src='img/video.mp4', controls='controls')
+                  p 我来乱入一下
+                .post--meta
+                  .left
+                    .icon
+                      img(src='img/icon-heart.png')
+                      | 26
+                    .icon
+                      img(src='img/icon-comment.png')
+                      | 25
+                  .right
+                    .icon
+                      img(src='img/icon-more.png')
+            li
+              .post
+                .post--namecard
+                  img(src='img/avatar.png')
+                  div
+                    strong 小鹿
+                    time 1分钟前
+                .post--content
+                  p 继续观望
+                .post--meta
+            li
+              .post
+                .post--namecard
+                  img(src='img/avatar.png')
+                  div
+                    strong 小鹿
+                    time 1分钟前
+                .post--content
+                  img(src='img/content.png')
+                  p 谁说胖纸没有柔软的
+                .post--meta
+
+          a.button__banner(href='#') 打开热呼，查看全部5条跟帖
+
+      section#related
+        .inner
+          h2 猜你喜欢
+          ul
+            li
+              .post__related
+                img(src='img/related.png')
+                div
+                  strong 有一种冷叫做爸妈觉得你冷有一种冷叫做爸妈觉得你冷
+                  span 海峡导报
+            li
+              .post__related
+                img(src='img/related.png')
+                div
+                  strong 有一种冷叫做爸妈觉得你冷有一种冷叫做爸妈觉得你冷
+                  span 海峡导报
+
     footer#footer
+      .inner
+        .left
+          img(src='img/user.png')
+          | “快来和我热呼一下”
+        .right
+          a.button__transparent(href='#') 立即打开
     script(src='js/main.js')

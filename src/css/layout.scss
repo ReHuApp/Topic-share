@@ -1,1 +1,64 @@
 @import 'variables';
+
+/* Header & Footer
+ * ===================================== */
+
+#header,
+#footer {
+  .inner {
+    padding: 0 10px;
+    max-width: 400px;
+    margin: 0 auto;
+    overflow: hidden;
+    clear: both;
+  }
+
+  .left {
+    float: left;
+  }
+
+  .right {
+    float: right;
+  }
+}
+
+#header {
+}
+
+#footer {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  background: transparentize($c-black, 0.4);
+  color: $c-white;
+}
+
+
+/* Main
+ * ===================================== */
+
+#main {
+  clear: both;
+
+  section {
+    background: $c-white;
+    margin-bottom: 1rem;
+    border-top: 1px solid $c-pale-gray;
+    border-bottom: 1px solid $c-pale-gray;
+
+    .inner {
+      padding: 0 10px;
+      max-width: 400px;
+      margin: 0 auto;
+      overflow: hidden;
+      clear: both;
+    }
+  }
+}
+
+#comments {
+  li {
+    border-bottom: 1px solid $c-pale-gray;
+  }
+}

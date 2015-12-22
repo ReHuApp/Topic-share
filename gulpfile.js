@@ -20,7 +20,8 @@ gulp.task('html', function() {
 gulp.task('css', function() {
   gulp.src([
         './src/css/base.scss',
-        './src/css/layout.scss'
+        './src/css/layout.scss',
+        './src/css/components.scss'
       ])
       .pipe(sass())
       .pipe(autoprefixer({
