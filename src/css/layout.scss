@@ -84,8 +84,26 @@
       padding: 0 10px;
       max-width: 400px;
       margin: 0 auto;
-      overflow: hidden;
       clear: both;
+    }
+
+    h2 {
+      font-size: $fs-small;
+      font-weight: normal;
+      height: 1.25rem;
+      line-height: 1.25rem;
+      margin-left: -.625rem;
+
+      &:before {
+        @include psuedo-element();
+        position: static;
+        display: inline-block;
+        height: 1.25rem;
+        vertical-align: middle;
+        width: 4px;
+        background: $c-yellow;
+        margin-right: .625rem;
+      }
     }
   }
 }

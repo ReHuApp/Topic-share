@@ -72,6 +72,7 @@
 
       &__moments {
         @extend .button__badge__share;
+        margin-left: .375rem;
 
         &:before {
           background: url(../img/icon-moments.png) no-repeat center center;
@@ -85,9 +86,16 @@
 .icon {
   display: inline-block;
   font-size: $fs-tiny;
+  margin-left: .625rem;
 
   img {
-    vertical-align: center;
+    vertical-align: middle;
+    width: .8125rem;
+    margin-right: 5px;
+  }
+
+  &:first-child {
+    margin-left: 0;
   }
 }
 
