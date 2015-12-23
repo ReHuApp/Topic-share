@@ -60,10 +60,19 @@
   }
 
   img {
-    width: 2.25rem;
-    height: 2.25rem;
     vertical-align: middle;
-    transform: translateY(-7px);
+
+    &:first-child {
+      width: 2.25rem;
+      height: 2.25rem;
+      vertical-align: middle;
+      transform: translateY(-7px);
+      margin-right: .5rem;
+    }
+
+    &:nth-child(2) {
+      width: 8.75rem;
+    }
   }
 }
 

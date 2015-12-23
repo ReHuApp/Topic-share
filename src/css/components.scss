@@ -156,6 +156,7 @@
       font-style: normal;
       background: $c-bg;
       margin-bottom: .625rem;
+      overflow: hidden;
 
       &:before {
         @include psuedo-element();
