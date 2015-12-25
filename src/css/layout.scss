@@ -63,12 +63,13 @@
     vertical-align: middle;
 
     &:first-child {
-      width: 2.25rem;
-      height: 2.25rem;
+      width: 2.5rem;
+      height: 2.5rem;
       vertical-align: middle;
       transform: translateY(-7px);
       margin-right: .5rem;
       border-radius: 50%;
+      border: 2px solid $c-white;
     }
 
     &:nth-child(2) {
